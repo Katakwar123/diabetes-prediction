@@ -1,0 +1,82 @@
+to run the dibetes project
+🏃 Step 9: Run Your Project!
+Open Anaconda Prompt and run these commands:
+bash# 1. Navigate to your project
+cd Desktop/diabetes-prediction
+
+# 2. Activate environment
+conda activate diabetes
+
+# 3. Run preprocessing
+python src/data_preprocessing.py
+
+# 4. Train model
+python src/model_training.py
+
+# 5. Launch web app
+streamlit run app.py
+
+📋 Complete Anaconda Command Reference
+Environment Management:
+bash# Create environment
+conda create -n diabetes python=3.10 -y
+
+# Activate environment
+conda activate diabetes
+
+# Deactivate environment
+conda deactivate
+
+# List all environments
+conda env list
+
+# Delete environment (if needed)
+conda env remove -n diabetes
+
+# Export environment (to share)
+conda env export > environment.yml
+
+# Create from environment file
+conda env create -f environment.yml
+Package Management:
+bash# Install package
+conda install package_name -y
+
+# Install from conda-forge channel
+conda install -c conda-forge package_name -y
+
+# Install multiple packages
+conda install numpy pandas scikit-learn -y
+
+# List installed packages
+conda list
+
+# Update package
+conda update package_name
+
+# Update all packages
+conda update --all
+
+# Remove package
+conda remove package_name
+Project Commands:
+bash# Activate your environment
+conda activate diabetes
+
+# Navigate to project
+cd path/to/diabetes-prediction
+
+# Run preprocessing
+python src/data_preprocessing.py
+
+# Train model
+python src/model_training.py
+
+# Make prediction
+python src/predict.py
+
+# Launch web app
+streamlit run app.py
+
+# Stop web app
+Ctrl + C
