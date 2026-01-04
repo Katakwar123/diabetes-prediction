@@ -28,13 +28,13 @@ An AI-powered health assessment tool that predicts diabetes risk using Machine L
 - **Feature Engineering**: Creates intelligent derived features
 - **High Accuracy**: Achieves ~75-80% prediction accuracy
 
-### 🧠 Natural Language Processing
-- **Text Analysis**: Analyzes patient descriptions using NLP
-- **Sentiment Analysis**: Detects emotional tone in patient input
-- **Keyword Extraction**: Identifies symptoms, lifestyle factors, and family history
-- **Word Clouds**: Visual representation of text data
+ Natural Language Processing
+- Text Analysis: Analyzes patient descriptions using NLP
+- Sentiment Analysis: Detects emotional tone in patient input
+- Keyword Extraction: Identifies symptoms, lifestyle factors, and family history
+- Word Clouds: Visual representation of text data
 
-### 📊 Interactive Web Interface
+ Interactive Web Interface
 - **User-Friendly Design**: Built with Streamlit
 - **Real-time Predictions**: Instant risk assessment
 - **Beautiful Visualizations**: Gauge charts, radar plots, and heatmaps
@@ -42,7 +42,7 @@ An AI-powered health assessment tool that predicts diabetes risk using Machine L
 
 ---
 
-## 📁 Project Structure
+ Project Structure
 
 ```
 diabetes-prediction/
@@ -73,23 +73,23 @@ diabetes-prediction/
 
 ---
 
-## 🚀 Installation
+ Installation
 
-### Prerequisites
+Prerequisites
 - Python 3.8 or higher
 - pip (Python package manager)
 - VS Code (recommended)
 
-### Step-by-Step Setup
+ Step-by-Step Setup
 
-1. **Clone or Download the Project**
+1.Clone or Download the Project
    ```bash
    # Create project folder
    mkdir diabetes-prediction
    cd diabetes-prediction
    ```
 
-2. **Create Virtual Environment**
+2. Create Virtual Environment
    ```bash
    # Windows
    python -m venv venv
@@ -100,22 +100,22 @@ diabetes-prediction/
    source venv/bin/activate
    ```
 
-3. **Install Dependencies**
+3. Install Dependencies
    ```bash
    pip install -r requirements.txt
    ```
 
 ---
 
-## 💻 Usage
+ Usage
 
-### Step 1: Prepare the Data
+Step 1: Prepare the Data
 
 ```bash
 python src/data_preprocessing.py
 ```
 
-**What it does:**
+What it does:
 - Loads the diabetes dataset
 - Handles missing values
 - Creates new features
@@ -123,7 +123,7 @@ python src/data_preprocessing.py
 - Scales features
 - Saves processed data
 
-**Expected Output:**
+Expected Output:
 ```
 🚀 STARTING DATA PREPROCESSING PIPELINE
 📂 Loading data...
@@ -136,21 +136,21 @@ python src/data_preprocessing.py
 ✅ PREPROCESSING COMPLETE!
 ```
 
----
 
-### Step 2: Train the Model
+
+ Step 2: Train the Model
 
 ```bash
 python src/model_training.py
 ```
 
-**What it does:**
+What it does:
 - Trains 5 different ML models
 - Compares their performance
 - Saves the best model
 - Shows detailed evaluation metrics
 
-**Expected Output:**
+Expected Output:
 ```
 🚀 TRAINING ALL MODELS
 🤖 Training Logistic Regression...
@@ -167,62 +167,62 @@ python src/model_training.py
 
 ---
 
-### Step 3: Make Predictions (CLI)
+ Step 3: Make Predictions (CLI)
 
-```bash
+bash
 python src/predict.py
-```
 
-**Interactive Mode:**
+
+Interactive Mode:
 - Choose option 1 for single patient prediction
 - Enter patient information when prompted
 - Optionally describe symptoms for NLP analysis
 - View comprehensive prediction report
 
-**Batch Mode:**
+Batch Mode:
 - Choose option 2 for multiple patients
 - Provide CSV file path
 - Get predictions for all patients at once
 
 ---
 
-### Step 4: Launch Web Application
+ Step 4: Launch Web Application
 
 ```bash
 streamlit run app.py
 ```
 
-**What happens:**
+What happens:
 - Opens a web browser automatically
 - Shows beautiful interface at `http://localhost:8501`
 - You can now use the app!
 
-**Web App Features:**
-1. **🔮 Prediction Page**
+Web App Features:
+1. Prediction Page
    - Enter patient data via sliders and inputs
    - Add text description for NLP analysis
    - Get instant predictions with visualizations
    - View personalized health recommendations
 
-2. **📊 Data Analysis Page**
+2.  Data Analysis Page
    - Explore dataset statistics
    - View feature distributions
    - Analyze correlations
 
-3. **ℹ️ About Page**
+3.  About Page
    - Project information
    - Model details
    - Technology stack
 
 ---
 
-## 📊 Model Performance
+ Model Performance
 
 ### Model Comparison
 
 | Model                  | Accuracy | Notes                          |
 |------------------------|----------|--------------------------------|
-| Random Forest          | 78.57%   | ⭐ Best overall performance    |
+| Random Forest          | 78.57%   | Best overall performance       |
 | Gradient Boosting      | 77.92%   | Strong, close second           |
 | Logistic Regression    | 77.27%   | Fast, interpretable            |
 | SVM                    | 76.62%   | Good for small datasets        |
@@ -242,21 +242,20 @@ Has Diabetes      0.74      0.64      0.69        54
 ```
 
 ### Key Insights
-- ✅ Model correctly identifies ~79% of cases
-- ✅ Better at detecting "No Diabetes" (87% recall)
-- ⚠️ More conservative with "Has Diabetes" (64% recall)
-- 💡 Balanced approach minimizes false negatives
+-  Model correctly identifies ~79% of cases
+-  Better at detecting "No Diabetes" (87% recall)
+-  More conservative with "Has Diabetes" (64% recall)
+-  Balanced approach minimizes false negatives
 
 ---
 
-## 🛠️ Technologies
+Technologies
 
 ### Core Technologies
-- **Python 3.8+**: Programming language
-- **NumPy & Pandas**: Data manipulation
-- **Scikit-learn**: Machine learning algorithms
-
-### Machine Learning Models
+- Python 3.8+: Programming language
+- NumPy & Pandas: Data manipulation
+- Scikit-learn: Machine learning algorithms
+ **Machine Learning Models**
 - Logistic Regression
 - Decision Trees
 - Random Forest
@@ -344,27 +343,27 @@ Logistic Regression        : 77.27% ⭐⭐⭐⭐⭐⭐⭐
 This project teaches:
 
 ### For Beginners
-- ✅ Setting up Python development environment
-- ✅ Working with CSV data
-- ✅ Basic machine learning concepts
-- ✅ Creating web applications
+- Setting up Python development environment
+-  Working with CSV data
+-  Basic machine learning concepts
+-  Creating web applications
 
 ### For Intermediate
-- ✅ Data preprocessing techniques
-- ✅ Feature engineering
-- ✅ Model comparison and selection
-- ✅ NLP integration
-- ✅ Interactive visualizations
+- Data preprocessing techniques
+- Feature engineering
+- Model comparison and selection
+- NLP integration
+- Interactive visualizations
 
 ### For Advanced
-- ✅ Production-ready ML pipeline
-- ✅ Model persistence (saving/loading)
-- ✅ Web deployment with Streamlit
-- ✅ Combining ML with NLP
+- Production-ready ML pipeline
+- Model persistence (saving/loading)
+- Web deployment with Streamlit
+- Combining ML with NLP
 
 ---
 
-## 🔧 Troubleshooting
+## 🔧Troubleshooting
 
 ### Common Issues
 
@@ -465,15 +464,15 @@ This is an educational project. Feel free to:
 **IMPORTANT MEDICAL DISCLAIMER:**
 
 This diabetes prediction system is:
-- ✅ An **educational tool** for learning ML/AI
-- ✅ A **demonstration** of ML applications in healthcare
-- ✅ For **research and learning purposes only**
+-  An **educational tool** for learning ML/AI
+-  A **demonstration** of ML applications in healthcare
+-  For **research and learning purposes only**
 
 This system is **NOT**:
-- ❌ A replacement for professional medical advice
-- ❌ A diagnostic tool for clinical use
-- ❌ Approved by any medical regulatory authority
-- ❌ Suitable for making medical decisions
+-  A replacement for professional medical advice
+-  A diagnostic tool for clinical use
+-  Approved by any medical regulatory authority
+-  Suitable for making medical decisions
 
 **Always consult qualified healthcare professionals** for:
 - Medical diagnosis
@@ -485,7 +484,7 @@ The creators and contributors are not responsible for any medical decisions made
 
 ---
 
-## 📞 Support
+##  Support
 
 Having trouble? Try:
 1. Check the troubleshooting section above
@@ -496,13 +495,13 @@ Having trouble? Try:
 
 ---
 
-## 📜 License
+##  License
 
 This project is for educational purposes. Feel free to use and modify for learning.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Dataset**: Pima Indians Diabetes Database
 - **Libraries**: Scikit-learn, Streamlit, Pandas, NumPy
@@ -511,7 +510,7 @@ This project is for educational purposes. Feel free to use and modify for learni
 
 ---
 
-## 📚 Additional Resources
+##  Additional Resources
 
 ### Learn More About:
 - **Machine Learning**: [Scikit-learn Documentation](https://scikit-learn.org/)
